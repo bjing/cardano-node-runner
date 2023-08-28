@@ -6,6 +6,7 @@ sh scripts/bootstrap_dirs.sh
 echo 
 
 # Cardano node binaries
+TBD
 
 
 #### Create symlinks ###
