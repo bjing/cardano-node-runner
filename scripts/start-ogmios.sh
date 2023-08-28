@@ -18,7 +18,7 @@ docker run --rm \
   --name ogmios \
   -p 1337:1337 \
   -v "$CARDANO_NODE_PATH/runtime/local/ipc":/ipc \
-  cardanosolutions/ogmios:latest \
+  cardanosolutions/ogmios:v5.6.0 \
     --node-socket /ipc/node.socket \
     --node-config /config/cardano-node/config.json \
     --host 0.0.0.0
