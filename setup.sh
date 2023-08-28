@@ -10,7 +10,7 @@ echo
 
 #### Create symlinks ###
 echo 'Symlinking scripts/cardano.env to $HOME/.bash_cardano'
-ln -sf scripts/cardano.env $HOME/.bash_cardano
+ln -sf $PWD/scripts/cardano.env $HOME/.bash_cardano
 echo
 
 # Creating symlinks for utility scripts
@@ -25,7 +25,7 @@ echo
 FILES_TO_SYMLINK="query-cardano-node.sh start-cardano-node start-ogmios.sh"
 for FILE in $FILES_TO_SYMLINK; do
   echo "Symlinking 'scripts/$FILE' to '$HOME/bin/$FILE'"
-  ln -sf scripts/$FILE $HOME/bin/$FILE
+  ln -sf $PWD/scripts/$FILE $HOME/bin/$FILE
 done;
 echo
 
