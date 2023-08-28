@@ -8,7 +8,6 @@ echo
 # Cardano node binaries
 TBD
 
-
 #### Create symlinks ###
 echo 'Symlinking scripts/cardano.env to $HOME/.bash_cardano'
 ln -sf $PWD/scripts/cardano.env $HOME/.bash_cardano
@@ -21,6 +20,12 @@ echo
 
 echo 'Adding $HOME/bin to $PATH in $HOME/.bashrc'
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+echo
+
+echo 'Adding cardano-node-runner bin directory to $PATH in $HOME/.bashrc'
+s="export PATH=\"$PWD/bin:"
+s+='$PATH"'
+echo $s >> ~/.bashrc
 echo
 
 FILES_TO_SYMLINK="query-cardano-node.sh start-cardano-node start-ogmios.sh"
