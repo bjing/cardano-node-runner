@@ -7,7 +7,8 @@ echo
 
 # Cardano node binaries
 mkdir bin/
-# TBD
+# Download your cardano-node binary and do the following:
+# tar zvxf <your_cardano_node_binary.tar.gz> -C bin/
 
 #### Create symlinks ###
 echo 'Symlinking scripts/cardano.env to $HOME/.bash_cardano'
