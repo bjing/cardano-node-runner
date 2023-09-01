@@ -6,7 +6,7 @@ sh scripts/bootstrap_dirs.sh
 echo 
 
 # Cardano node binaries
-TBD
+# TBD
 
 #### Create symlinks ###
 echo 'Symlinking scripts/cardano.env to $HOME/.bash_cardano'
