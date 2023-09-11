@@ -30,7 +30,7 @@ s+='$PATH"'
 echo $s >> ~/.bashrc
 echo
 
-FILES_TO_SYMLINK="query-cardano-node.sh start-cardano-node.sh start-ogmios.sh"
+FILES_TO_SYMLINK="query-cardano-tip.sh start-cardano-node.sh start-ogmios.sh"
 for FILE in $FILES_TO_SYMLINK; do
   echo "Symlinking 'scripts/$FILE' to '$HOME/bin/$FILE'"
   ln -sf $PWD/scripts/$FILE $HOME/bin/$FILE
